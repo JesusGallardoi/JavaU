@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class HolaMundo {
+
+    
+    
+    public static void main(String[] args) {
+        
+        Scanner entrada = new Scanner(System.in); 
+        int hombres, mujer, resultado, porcentaje, porcentajem;
+        System.out.println("Cuantos hombres hay en el aula? ") ;
+        hombres = entrada.nextInt();
+        System.out.println("Cuantas mujeres hay en el aula? ");
+        mujer = entrada.nextInt();
+        resultado = hombres + mujer;
+        porcentaje = (hombres * 100) / resultado;
+        porcentajem =(mujer * 100) /resultado;
+        System.out.println("El porcentaje de Hombres en el curso es de: " + porcentaje);
+        System.out.println("El porcentaje de Mujeres en el curso es de: " + porcentajem);
+        
+        
+    }
+    
+}
